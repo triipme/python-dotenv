@@ -63,7 +63,7 @@ def get(ctx, key):
     file = ctx.obj['FILE']
     stored_value = get_key(file, key)
     if stored_value:
-        click.echo('%s="%s"' % (key, stored_value))
+        click.echo('%s' % stored_value)
     else:
         exit(1)
 
